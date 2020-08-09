@@ -1,0 +1,122 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aepistle</title>
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+          crossorigin="anonymous" />
+    <link rel="stylesheet" href="~/css/style.css" />
+</head>
+<body>
+    <div class="main">
+        <div class="top-section">
+            <img class="desktop-header-gradient"
+                 src="./img/desktop-top-gradient.svg"
+                 alt="gradient" />
+            <img class="tablet-header-gradient"
+                 src="./img/tablet-top-gradient.png"
+                 alt="gradient" />
+            <img class="mobile-header-gradient"
+                 src="./img/mobile-top-gradient.svg"
+                 alt="gradient" />
+        </div>
+        <div class="top-container container text-white">
+            <img class="logo" src="./img/aepistle-logo.svg" alt="logo" />
+            <div class="margin-vertical">
+                <h3>Welcome to your new digital utopia,</h3>
+                <h3>made for those who are hungry for change.</h3>
+            </div>
+            <h3 class="margin-vertical">Set to launch this September.</h3>
+            <form class="form-wrapper" method="POST">
+                <div class="row justify-content-center align-items-top">
+                    <div class="col-75 mr-2">
+                        <input type="text"
+                               class="form-control bg-white mr-2"
+                               id="email"
+                               name="email"
+                               placeholder="Email" />
+                    </div>
+                    <div class="col-25">
+                        <input  type="submit" id="btnStart" class="btn btn-primary"  value="Subscribe"/>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="phone-img-wrapper">
+            <img src="./img/phone.png" alt="mobile-graphic" />
+        </div>
+        <div class="content container">
+            <h3 class="mx-auto col-md-7 col-xs-12 margin-vertical px-0">
+                We have one main goal — <strong>social unity</strong> on the web. We
+                are invested in facilitating authentic interactions by cultivating
+                connections in a new communal space. We reject exclusivity and the
+                current social media climate that has become diseased. We offer an
+                unrestricted social media experience that bring users together with
+                groups that redefine the word ‘community’.
+            </h3>
+            <div class="fist-icon">
+                <img width="105" src="./img/hand.svg" alt="fist-icon" />
+            </div>
+            <h3 class="mx-auto col-md-7 margin-vertical">
+                We are for those who have been silenced or marginalized because of
+                their race, gender, social status, religion, sexual orientation, or
+                because they do not adhere to Western beauty standards.
+            </h3>
+            <h3 class="margin-vertical">We are anti-hate</h3>
+            <h3 class="margin-vertical">
+                <strong><i>We are aepistle</i></strong>
+            </h3>
+            <h3 class="margin-vertical">
+                @Html.ActionLink("Read our full Manifesto", "Manifesto","Home")
+                 </h3>
+        </div>
+        <div class="bottom-section">
+           <img alt="brand-logo"
+                 class="brand-logo"
+                 src="./img/ae-icon.svg" />
+            <img class="gallery-img"
+                 alt="gallery"
+                 src="./img/gallery-image.svg" />
+            <img class="gallery-img-mobile"
+                 alt="gallery"
+                 src="./img/gallery-image-mobile.png" />
+        </div>
+    </div>
+    <!-- <----bootstrap---->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+    @*<script>
+        $(function () {
+            $('#btnStart').unbind('click');
+            debugger
+            $('#btnStart').on('click', function () {
+                $.ajax({
+                    url: "/Home/Index",
+                    type: 'POST',
+                    contentType: "application/json; charset=utf-8",
+                    dataType: 'json',
+                    data: JSON.stringify({
+                        txtValue: $("#email").val()
+                    }),
+                    async: false
+                });
+            });
+        });
+    </script>*@
+</body>
+</html>

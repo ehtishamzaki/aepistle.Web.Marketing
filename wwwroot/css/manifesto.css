@@ -1,0 +1,27 @@
+@font-face {
+  font-family: TimesNewRoman-Regular;
+  src: url("./assets/fonts/TimesNewRoman-Regular.ttf") format("ttf");
+}
+:root {
+  --primary-color: #2713c4;
+  --primary-text-color: #171717;
+  --gradient: linear-gradient(156.28deg, #f08f77 15.57%, #f7ab52 59.07%);
+}
+.manifesto {
+  font-family: TimesNewRoman-Regular;
+  padding-bottom: 100px;
+}
+
+.manifesto p {
+  font-size: 1.3rem;
+  color: var(--primary-text-color);
+}
+.top-container {
+  margin-bottom: 200px;
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  .top-container {
+    margin-bottom: 300px;
+  }
+}

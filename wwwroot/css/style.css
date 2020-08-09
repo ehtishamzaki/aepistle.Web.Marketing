@@ -1,0 +1,244 @@
+:root {
+  --primary-color: #2713c4;
+  --primary-text-color: #171717;
+  --gradient: linear-gradient(156.28deg, #f08f77 15.57%, #f7ab52 59.07%);
+}
+@font-face {
+  font-family: SFProDisplay-Regular;
+  src: url("./assets/fonts/SFProDisplay-Regular.ttf") format("ttf");
+}
+
+* {
+  box-sizing: border-box;
+  text-align: center;
+}
+.main {
+  font-family: SFProDisplay-Regular;
+  position: relative;
+  width: 100vw;
+}
+
+h3 {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 600;
+}
+.content h3 {
+  color: var(--primary-text-color);
+}
+.margin-vertical {
+  margin: 50px 0;
+}
+.logo {
+  margin-top: 130px;
+  width: 32vw;
+  z-index: 1001;
+}
+.desktop-header-gradient {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+.header-gradient {
+  width: 100vw;
+  height: 50vh;
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  top: 0;
+}
+.tablet-header-gradient {
+  display: none;
+}
+.mobile-header-gradient {
+  display: none;
+}
+
+input[type="email"] {
+  border: none;
+  width: 330px !important;
+  height: 40px !important;
+  border-radius: 8px;
+}
+::-webkit-input-placeholder {
+  text-align: left;
+  color: #171717;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+
+:-moz-placeholder {
+  text-align: left;
+  color: #171717;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+.btn {
+  color: white;
+  background-color: var(--primary-color);
+  border: none;
+  height: 40px;
+  border-radius: 8px;
+}
+.phone-img-wrapper img {
+  width: 40vw;
+  margin: 65px 0;
+}
+.bottom-section {
+  position: relative;
+  width: 100vw;
+}
+.gallery-img {
+  width: 100%;
+  height: auto;
+}
+.gallery-img-mobile {
+  display: none;
+}
+.brand-logo {
+  width: 100px;
+  position: absolute;
+  top: 60%;
+  left: 0;
+  right: 0;
+  margin: 0px auto;
+  z-index: 1001;
+}
+.form-mobile {
+  display: none;
+  visibility: hidden;
+}
+
+@media only screen and (max-width: 600px) {
+  .logo {
+    margin-top: 50px;
+    width: 82%;
+  }
+  .container {
+    width: 82%;
+    padding: 0;
+    position: relative;
+  }
+  .margin-vertical {
+    margin: 2.6rem 0;
+  }
+  h3 {
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 600;
+  }
+  .content h3 {
+    font-weight: 500;
+  }
+  .desktop-header-gradient {
+    display: none;
+  }
+  .header-gradient {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: -1;
+  }
+  .tablet-header-gradient {
+    display: none;
+  }
+  .mobile-header-gradient {
+    display: block;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+  }
+  input[type="email"] {
+    width: 200px !important;
+    border-radius: 8px;
+  }
+  .form-group {
+    margin-bottom: 0;
+  }
+  .btn {
+    padding: 0 10px;
+    font-weight: bold;
+  }
+  .phone-img-wrapper img {
+    width: 87%;
+    margin: 40px 0 60px 0;
+  }
+  .gallery-img {
+    display: none;
+  }
+  .gallery-img-mobile {
+    display: block;
+    width: 100%;
+    height: auto;
+    z-index: -1;
+  }
+  .brand-logo {
+    bottom: 30px;
+  }
+  .form-mobile {
+    display: block;
+    position: absolute;
+    top: 40%;
+    left: 0;
+    right: 0;
+    z-index: 1001;
+    visibility: visible;
+  }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  .margin-vertical {
+    margin: 2rem 0;
+  }
+  .desktop-header-gradient {
+    display: none;
+  }
+  .phone-img-wrapper img {
+    width: 55vw;
+    margin: 65px 0;
+  }
+  .header-gradient {
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0px;
+    z-index: -1;
+  }
+  .tablet-header-gradient {
+    display: block;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0 !important;
+    left: 0;
+    right: 0;
+    z-index: -1;
+  }
+  .mobile-header-gradient {
+    display: none;
+  }
+  .logo {
+    margin-top: 50px;
+    width: 35%;
+    z-index: 1001;
+  }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}
